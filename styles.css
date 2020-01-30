@@ -1,0 +1,62 @@
+
+body {
+  font-family: sans-serif;
+}
+
+code, pre {
+  font-family: "Droid Sans Mono", monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Sans", sans-serif;
+  color: #B33;
+}
+
+blockquote {
+  display: block;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+
+  font-style: italic;
+  line-height: 150%;
+
+  background-color: #F9F9F9;
+  border-left: 15px solid #CCC;
+}
+
+blockquote::before {
+  content: "\201C";
+
+  font-size: 60px;
+  font-weight: bold;
+  color: #BBB;
+
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+
+blockquote::after {
+  content: "";
+}
+
+img {
+  display: block;
+  max-width: 780px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.clamped {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul, li {
+  margin-bottom: 0.5em;
+}
