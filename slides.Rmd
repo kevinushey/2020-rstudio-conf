@@ -742,7 +742,11 @@ renv::settings$use.cache(FALSE)
 
 --
 
-`renv`, on its own, is _not_ a panacea. It solves only one part of the problem -- reproduction of a project's **R** package dependencies. There are a myriad of other factors that can affect the results of an analysis, including:
+`renv`, on its own, is _not_ a panacea. It solves only one part of the problem -- reproduction of a project's **R** package dependencies. There are a myriad of other factors that can affect the results of an analysis, including (but not limited to):
+
+--
+
+- The version of **R**,
 
 --
 
@@ -758,14 +762,17 @@ renv::settings$use.cache(FALSE)
 
 --
 
-- The versions of system libraries installed and in use,
 
---
-
-[Docker](https://www.docker.com/) is a tool that helps solve this
+And so on. [Docker](https://www.docker.com/) is a tool that helps solve this
 problem through the use of __containers__. Very roughly speaking, one can think
 of a container as a small, self-contained system within which different
 applications can be run. For more details, please see <https://environments.rstudio.com/docker>.
+
+---
+
+# What's Missing?
+
+You can view `renv` and Docker as complementary tools. Use Docker to manage your system-level requirements, and use `renv` to manage your **R** package-level requirements.
 
 --
 
