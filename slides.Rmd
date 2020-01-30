@@ -778,6 +778,10 @@ You can view `renv` and Docker as complementary tools. Use Docker to manage your
 
 In addition, the [rocker](https://www.rocker-project.org/) project brings **R** to Docker, and provides pre-built Docker images using **R** built on top of the [Debian](https://www.debian.org/) Linux operating system.
 
+--
+
+See https://rstudio.github.io/renv/articles/docker.html for more details.
+
 ---
 
 class: center, bottom, inverse
